@@ -2,37 +2,241 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.NavLinkText {
+  font-family: "Inter" !important;
+  font-style: normal;
+  font-weight: 400 !important;
+  font-size: 16px !important;
+  line-height: 19px !important;
+  margin-left: 2rem;
+  color: #000000;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.NavLinkText > * {
+  margin-left: 1rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.ActionButton {
+  font-family: "Inter";
+  font-style: normal;
+  width: 150px;
+  height: 40px;
   color: white;
+  border: none;
+  background: #007bff;
+  border-radius: 47px;
+  font-weight: 500;
 }
 
-.App-link {
-  color: #61dafb;
+.ActionButton:hover {
+  font-family: "Inter";
+  font-style: normal;
+  width: 150px;
+  height: 40px;
+  color: white;
+  border: none;
+  background: #218afa;
+  border-radius: 47px;
+  font-weight: 500;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.Introduction > * {
+  margin-top: 0.3rem;
+}
+
+h1 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700 !important;
+  font-size: 71px !important;
+  line-height: 86px;
+
+  text-align: center;
+  color: #3b3a44;
+}
+
+h2 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400 !important;
+  font-size: 30px !important;
+  line-height: 50px !important;
+  text-align: center;
+
+  color: #3b3a44;
+}
+
+h3 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px !important;
+  line-height: 22px;
+  text-align: center;
+}
+
+subtitle {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400 !important;
+  font-size: 14px !important;
+  line-height: 17px !important;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #3b3a44;
+}
+
+p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400 !important;
+  font-size: 15px !important;
+  line-height: 18px;
+  text-align: center;
+}
+
+ol {
+  counter-reset: item;
+  list-style-type: none;
+  line-height: 2.2;
+  margin-left: -20px;
+}
+
+ol li {
+  display: flex;
+  list-style-position: outside;
+  line-height: 1.5;
+  position: relative;
+  margin-bottom: 50px;
+}
+
+ol li span {
+  margin-left: 60px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400 !important;
+  font-size: 14px !important;
+  color: #ababab;
+}
+
+ol li:before {
+  content: counter(item) " ";
+  counter-increment: item;
+  color: #ffffff;
+  position: absolute;
+  top: 50%;
+  margin-top: -1em;
+  background: #8f8f8f;
+  height: 2em;
+  width: 2em;
+  line-height: 2em;
+  text-align: center;
+  border-radius: 2em;
+  font-weight: 700 !important;
+  font-family: "Inter" !important;
+  font-style: normal;
+}
+
+.OPRow {
+  display: flex;
+  overflow: visible;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: fit-content;
+  opacity: 0.35;
+}
+
+.Spaced {
+  padding-inline: 30px;
+}
+
+.OPLogo {
+  margin: 10px;
+  transition: transform 0.2s;
+}
+
+.OPLogo:hover {
+  margin: 10px;
+  transform: scale(1.2);
+}
+
+.HighlightOnHover {
+  opacity: 0.4;
+}
+
+.HighlightOnHover:hover {
+  opacity: 1;
+}
+
+.Section {
+  margin-top: auto;
+  margin-bottom: 6rem;
+}
+
+.Section > * {
+  margin-bottom: 3rem;
+}
+
+@media only screen and (max-width: 900px) {
+  .OPDiagram {
+    flex-direction: column !important;
+    margin-left: "0rem";
+    align-items: center;
   }
-  to {
-    transform: rotate(360deg);
+
+  
+}
+@media only screen and (max-width: 1300px) {
+  .DeveloperResources {
+    flex-direction: column !important;
+    margin-left: "0rem";
+    align-items: center;
+    
   }
+  .DeveloperResources > * {
+    margin-top:'2rem';
+  }
+  
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+.marquee {
+  display: flex;
+  overflow: hidden;
+  user-select: none;
+  gap: var(--gap);
+  mask-image: linear-gradient(
+    var(--mask-direction, to right),
+    hsl(0 0% 0% / 0),
+    hsl(0 0% 0% / 1) 20%,
+    hsl(0 0% 0% / 1) 80%,
+    hsl(0 0% 0% / 0)
+  );
+}
+
+.DeveloperResources > * {
+  padding-inline: 30px;
+  transition: transform 0.2s;
+}
+
+.DeveloperResources > *:hover {
+ transform: scale(1.05);
 }
