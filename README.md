@@ -8,6 +8,10 @@ Build a single page with this content:
 
 https://gkogan.notion.site/gkogan/The-OP-Stack-aafcab0005e3445a8ad8491aac80446c
 
+Live Site:
+
+https://63d2015e42a9be4ec54a90fa--resilient-tanuki-4f9872.netlify.app/
+
 ## Assumptions and Notes
 
 - The diagram in the "How does the OP Stack work?" section cycles through logos of various data warehouses and client applications. Some architectural assumptions are being made here regarding compatibility. 
